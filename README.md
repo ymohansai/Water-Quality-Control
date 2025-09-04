@@ -1,44 +1,65 @@
-# Water-Quality-Control
+## Water-Quality-Control
 
-This project analyzes water quality parameters and applies data analysis and machine learning techniques to assess and predict water potability. The goal is to support environmental monitoring and ensure safe drinking water standards.
+This project analyzes water quality parameters and applies data analysis and machine learning techniques to assess and predict water safety.
+The goal is to support environmental monitoring and ensure safe drinking water standards.
 
-## Project Overview
+-> Project Overview
 
 Exploratory Data Analysis (EDA) of water quality dataset
 
 Preprocessing and feature engineering for clean analysis
 
-Machine Learning models to classify water potability
+Random Forest Classifier to classify water as safe (1) or not safe (0)
 
-Visualization of important factors affecting water safety
+Evaluation of model performance using accuracy, precision, recall, and F1-score
 
-## Dataset
+-> Dataset
 
-The dataset contains chemical properties of water samples, including:
+The dataset contains chemical and biological properties of water samples, including:
 
-pH
+Aluminium
 
-Hardness
+Ammonia
 
-Solids
+Arsenic
 
-Chloramines
+Barium
 
-Sulfate
+Cadmium
 
-Conductivity
+Chloramine
 
-Organic Carbon
+Chromium
 
-Trihalomethanes
+Copper
 
-Turbidity
+Fluoride
 
-Potability (Target variable: Safe / Not Safe)
+Bacteria
 
-The dataset was sourced from open data repositories (e.g., Kaggle).
+Lead
 
-## Installation
+Nitrates
+
+Nitrites
+
+Mercury
+
+Perchlorate
+
+Radium
+
+Selenium
+
+Silver
+
+Uranium
+
+Target Variable: is_safe (1 = Safe, 0 = Not Safe)
+
+-> Dataset size: ~7996 rows × 21 columns
+
+-> Installation
 
 Clone this repository and install the required dependencies:
 
@@ -46,9 +67,9 @@ git clone https://github.com/your-username/water-quality-control.git
 cd water-quality-control
 pip install -r requirements.txt
 
-## Usage
+-> Usage
 
-Open the notebook in Jupyter and run all cells:
+Run the notebook or script to train and evaluate the model:
 
 jupyter notebook water_quality_control.ipynb
 
@@ -57,33 +78,33 @@ The notebook will:
 
 Perform EDA with graphs and insights
 
-Preprocess data (handling null values, scaling)
+Preprocess data (handle missing values, type conversion)
 
-Train ML models (Logistic Regression, Random Forest, etc.)
+Train a Random Forest Classifier
 
-Evaluate performance with accuracy and other metrics
+Evaluate model performance with metrics
 
-## Results
+-> Results
 
-Identified key features impacting water potability
+Identified key features impacting water safety
 
-Built predictive models to classify water safety
+Built a predictive ML model to classify water safety
 
-Achieved [insert your model’s best accuracy/score here]
+Achieved 96% accuracy with strong precision/recall scores
 
-## Technologies Used
+-> Technologies Used
 
-Python
+Python 
 
 Pandas, NumPy
 
 Matplotlib, Seaborn
 
-Scikit-learn
+Scikit-learn 
 
 Jupyter Notebook
 
-## Applications
+-> Applications
 
 Public health monitoring
 
